@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+data/
+index-export.json
+dependency-reduced-pom.xml
+*.log
