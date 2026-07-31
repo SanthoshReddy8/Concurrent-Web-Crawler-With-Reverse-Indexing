@@ -15,9 +15,8 @@ jobs:
           distribution: temurin
           java-version: "17"
           cache: maven
-      - run: chmod +x mvnw
-      - run: ./mvnw -B test
-      - run: ./mvnw -B -Pintegration-tests verify
+      - run: mvn -B test
+      - run: mvn -B -Pintegration-tests verify
       - run: docker build -t crawler:${{ github.sha }} .
 
   publish:
